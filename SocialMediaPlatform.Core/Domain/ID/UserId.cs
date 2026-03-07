@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMediaPlatform.Core.Domain.ID
+﻿namespace SocialMediaPlatform.Core.Domain.ID
 {
+    /// <summary>
+    /// User-ийн ID дугаарыг ялгахад зориулсан wrapper класс
+    /// </summary>
     public class UserId
     {
+        /// <summary>
+        /// User-ийн ID дугаарын утга
+        /// </summary>
+        public required uint Value { get; init; }
+
+        public string ToString() => Value.ToString();
     }
 }
