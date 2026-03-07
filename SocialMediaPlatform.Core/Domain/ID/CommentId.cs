@@ -8,7 +8,7 @@
         /// <summary>
         /// Комметийн ID дугаарын утга
         /// </summary>
-        public uint Value { get; init;  }
+        public required uint Value { get; init;  }
 
         public override string ToString() => Value.ToString();
     }
