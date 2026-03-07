@@ -10,6 +10,6 @@
         /// </summary>
         public required uint Value { get; init; }
 
-        public string ToString() => Value.ToString();
+        public override string ToString() => Value.ToString();
     }
 }
