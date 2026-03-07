@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|c:\\users\\acer\\source\\repos\\socialmediaplatform\\socialmediaplatform.reddit.core\\socialmediaplatform.reddit.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|solutionrelative:socialmediaplatform.reddit.core\\socialmediaplatform.reddit.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E691ECFA-E125-5137-3290-4CB1D4526FF0}|SocialMediaPlatform.Core\\SocialMediaPlatform.Core.csproj|c:\\users\\acer\\source\\repos\\socialmediaplatform\\socialmediaplatform.core\\domain\\id\\commentid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E691ECFA-E125-5137-3290-4CB1D4526FF0}|SocialMediaPlatform.Core\\SocialMediaPlatform.Core.csproj|solutionrelative:socialmediaplatform.core\\domain\\id\\commentid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SocialMediaPlatform.Reddit.Core",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj",
+              "RelativeDocumentMoniker": "SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj",
+              "RelativeToolTip": "SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-07T23:17:34.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommentId.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Core\\Domain\\ID\\CommentId.cs",
+              "RelativeDocumentMoniker": "SocialMediaPlatform.Core\\Domain\\ID\\CommentId.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Core\\Domain\\ID\\CommentId.cs",
+              "RelativeToolTip": "SocialMediaPlatform.Core\\Domain\\ID\\CommentId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T23:01:17.387Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
