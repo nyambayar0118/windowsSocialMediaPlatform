@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Domain.Comment
 {
-    internal class Comment
+    public class Comment
     {
     }
 }

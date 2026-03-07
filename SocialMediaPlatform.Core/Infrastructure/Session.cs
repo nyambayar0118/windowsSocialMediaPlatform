@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Infrastructure
 {
-    internal class Session
+    public class Session
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Domain.Reaction
 {
-    internal class Reaction
+    public class Reaction
     {
     }
 }

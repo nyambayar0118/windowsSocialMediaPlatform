@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Ports.Input
 {
-    internal interface IUserServicePort
+    public interface IUserServicePort
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Domain.ID
 {
-    internal class PostId
+    public class PostId
     {
     }
 }

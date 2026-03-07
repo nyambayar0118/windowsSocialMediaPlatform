@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Domain.Group
 {
-    internal class GroupMember
+    public class GroupMember
     {
     }
 }

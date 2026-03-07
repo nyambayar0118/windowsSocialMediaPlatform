@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Domain.User
 {
-    internal class User
+    public class User
     {
     }
 }

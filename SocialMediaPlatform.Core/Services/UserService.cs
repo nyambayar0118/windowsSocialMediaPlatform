@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Services
 {
-    internal class UserService
+    public class UserService
     {
     }
 }

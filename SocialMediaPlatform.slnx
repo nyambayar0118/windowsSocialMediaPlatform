@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="SocialMediaPlatform.ConsoleApp/SocialMediaPlatform.ConsoleApp.csproj" Id="9aefc736-85ad-476d-a94d-9043f1fff923" />
   <Project Path="SocialMediaPlatform.Core/SocialMediaPlatform.Core.csproj" />
+  <Project Path="SocialMediaPlatform.RedditConsoleApp/SocialMediaPlatform.RedditConsoleApp.csproj" Id="d71032f9-fdcf-46d6-af2e-623a212886b3" />
 </Solution>

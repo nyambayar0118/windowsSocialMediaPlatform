@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Factories
 {
-    internal class UserFactory
+    public class UserFactory
     {
     }
 }

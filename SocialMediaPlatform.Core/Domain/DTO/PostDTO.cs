@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Domain.DTO
 {
-    internal class PostDTO
+    public class PostDTO
     {
     }
 }

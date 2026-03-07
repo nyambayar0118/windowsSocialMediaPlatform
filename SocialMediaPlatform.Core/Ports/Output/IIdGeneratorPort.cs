@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Ports.Output
 {
-    internal interface IIdGeneratorPort
+    public interface IIdGeneratorPort
     {
     }
 }

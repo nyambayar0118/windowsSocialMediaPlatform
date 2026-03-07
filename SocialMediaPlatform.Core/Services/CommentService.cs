@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Services
 {
-    internal class CommentService
+    public class CommentService
     {
     }
 }

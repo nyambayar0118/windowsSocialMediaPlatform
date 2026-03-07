@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Ports.Output
 {
-    internal interface IGroupRepoPort
+    public interface IGroupRepoPort
     {
     }
 }

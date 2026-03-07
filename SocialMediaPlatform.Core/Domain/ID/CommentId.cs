@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMediaPlatform.Core.Domain.ID
+﻿namespace SocialMediaPlatform.Core.Domain.ID
 {
-    internal class CommentId
+    /// <summary>
+    /// Комментийн ID дугаарыг ялгахад зориулсан wrapper класс
+    /// </summary>
+    public class CommentId
     {
+        /// <summary>
+        /// Комметийн ID дугаарын утга
+        /// </summary>
+        public uint Value { get; init;  }
+
+        public override string ToString() => Value.ToString();
     }
 }

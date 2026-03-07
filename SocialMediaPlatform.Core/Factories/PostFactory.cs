@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SocialMediaPlatform.Core.Factories
 {
-    internal class PostFactory
+    public class PostFactory
     {
     }
 }
