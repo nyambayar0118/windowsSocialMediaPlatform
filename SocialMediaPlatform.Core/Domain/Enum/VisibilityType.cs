@@ -6,6 +6,6 @@
     public enum VisibilityType
     {
         Private,
-        Default
+        Public
     }
 }
