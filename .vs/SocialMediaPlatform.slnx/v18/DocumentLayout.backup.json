@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|c:\\users\\acer\\source\\repos\\socialmediaplatform\\socialmediaplatform.reddit.core\\socialmediaplatform.reddit.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|solutionrelative:socialmediaplatform.reddit.core\\socialmediaplatform.reddit.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|c:\\users\\acer\\source\\repos\\socialmediaplatform\\socialmediaplatform.reddit.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|solutionrelative:socialmediaplatform.reddit.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E691ECFA-E125-5137-3290-4CB1D4526FF0}|SocialMediaPlatform.Core\\SocialMediaPlatform.Core.csproj|c:\\users\\acer\\source\\repos\\socialmediaplatform\\socialmediaplatform.core\\domain\\id\\commentid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E691ECFA-E125-5137-3290-4CB1D4526FF0}|SocialMediaPlatform.Core\\SocialMediaPlatform.Core.csproj|solutionrelative:socialmediaplatform.core\\domain\\id\\commentid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|c:\\users\\acer\\source\\repos\\socialmediaplatform\\socialmediaplatform.reddit.core\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|solutionrelative:socialmediaplatform.reddit.core\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|c:\\users\\acer\\source\\repos\\socialmediaplatform\\socialmediaplatform.reddit.core\\services\\groupmemberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|solutionrelative:socialmediaplatform.reddit.core\\services\\groupmemberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SocialMediaPlatform.Reddit.Core",
-              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj",
-              "RelativeDocumentMoniker": "SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj",
-              "ToolTip": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj",
-              "RelativeToolTip": "SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-07T23:17:34.236Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\Program.cs",
+              "RelativeDocumentMoniker": "SocialMediaPlatform.Reddit.Core\\Program.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\Program.cs",
+              "RelativeToolTip": "SocialMediaPlatform.Reddit.Core\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T22:56:34.376Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CommentId.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Core\\Domain\\ID\\CommentId.cs",
-              "RelativeDocumentMoniker": "SocialMediaPlatform.Core\\Domain\\ID\\CommentId.cs",
-              "ToolTip": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Core\\Domain\\ID\\CommentId.cs",
-              "RelativeToolTip": "SocialMediaPlatform.Core\\Domain\\ID\\CommentId.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Title": "AppConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\AppConfig.cs",
+              "RelativeDocumentMoniker": "SocialMediaPlatform.Reddit.Core\\AppConfig.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\AppConfig.cs",
+              "RelativeToolTip": "SocialMediaPlatform.Reddit.Core\\AppConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T23:01:17.387Z",
+              "WhenOpened": "2026-03-08T22:55:00.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GroupMemberService.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\Services\\GroupMemberService.cs",
+              "RelativeDocumentMoniker": "SocialMediaPlatform.Reddit.Core\\Services\\GroupMemberService.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\Services\\GroupMemberService.cs",
+              "RelativeToolTip": "SocialMediaPlatform.Reddit.Core\\Services\\GroupMemberService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAE0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T22:53:24.974Z",
               "EditorCaption": ""
             }
           ]

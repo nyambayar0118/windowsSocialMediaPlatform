@@ -11,7 +11,7 @@ namespace SocialMediaPlatform.Core.Ports.Output
     {
         /// <summary>Reaction хадгалах</summary>
         /// <param name="reaction">Хадгалах reaction-ий объект</param>
-        public void Save(Reaction<object> reaction);
+        public void Save(ReactionBase reaction);
 
         /// <summary>Reaction устгах</summary>
         /// <param name="targetId">Зорилтот объектын ID дугаар</param>

@@ -13,6 +13,7 @@ namespace SocialMediaPlatform.Core.Domain.DTO
         GroupId Id,
         string Name,
         string Description,
-        UserId OwnerId
+        UserId OwnerId,
+        DateTime CreatedAt
     );
 }

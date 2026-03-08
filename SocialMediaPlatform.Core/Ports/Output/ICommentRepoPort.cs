@@ -10,22 +10,22 @@ namespace SocialMediaPlatform.Core.Ports.Output
     {
         /// <summary>Comment хадгалах</summary>
         /// <param name="comment">Хадгалах comment-ийн объект</param>
-        public void Save(Comment<object> comment);
+        public void Save(CommentBase comment);
 
         /// <summary>ID-аар comment хайх</summary>
         /// <param name="commentId">Comment-ийн ID дугаар</param>
         /// <returns>Олдсон comment-ийн объект</returns>
-        public Comment<object> FindById(CommentId commentId);
+        public CommentBase FindById(CommentId commentId);
 
         /// <summary>Post-ийн comment-уудыг авах</summary>
         /// <param name="postId">Post-ийн ID дугаар</param>
         /// <returns>Comment-ийн объектын жагсаалт</returns>
-        public List<Comment<object>> FindByPost(PostId postId);
+        public List<CommentBase> FindByPost(PostId postId);
 
         /// <summary>Comment-ийн хариунуудыг авах</summary>
         /// <param name="commentId">Эх comment-ийн ID дугаар</param>
         /// <returns>Reply comment-ийн объектын жагсаалт</returns>
-        public List<Comment<object>> FindByParent(CommentId commentId);
+        public List<CommentBase> FindByParent(CommentId commentId);
 
         /// <summary>Comment устгах</summary>
         /// <param name="commentId">Comment-ийн ID дугаар</param>

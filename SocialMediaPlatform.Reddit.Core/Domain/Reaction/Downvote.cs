@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SocialMediaPlatform.Core.Domain.Reaction;
+using SocialMediaPlatform.Reddit.Core.Enum;
 
 namespace SocialMediaPlatform.Reddit.Core.Domain.Reaction
 {
-    public class Downvote
+    /// <summary>
+    /// Reddit платформын сөрөг үнэлгээ - Downvote класс
+    /// </summary>
+    public class Downvote : Reaction<ReactionType>
     {
     }
 }

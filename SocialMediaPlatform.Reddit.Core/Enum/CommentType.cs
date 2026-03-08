@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMediaPlatform.Reddit.Core.Enum
+﻿namespace SocialMediaPlatform.Reddit.Core.Enum
 {
-    public class CommentType
+    /// <summary>
+    /// Comment-ийн төрөл
+    /// </summary>
+    public enum CommentType
     {
+        Main,
+        Reply
     }
 }

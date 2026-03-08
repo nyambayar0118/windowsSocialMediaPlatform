@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|c:\\users\\acer\\source\\repos\\socialmediaplatform\\socialmediaplatform.reddit.core\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|solutionrelative:socialmediaplatform.reddit.core\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|c:\\users\\acer\\source\\repos\\socialmediaplatform\\socialmediaplatform.reddit.core\\domain\\user\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D87D8B31-99E7-0AA3-391D-7AE8B5992548}|SocialMediaPlatform.Reddit.Core\\SocialMediaPlatform.Reddit.Core.csproj|solutionrelative:socialmediaplatform.reddit.core\\domain\\user\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,22 +24,9 @@
               "RelativeDocumentMoniker": "SocialMediaPlatform.Reddit.Core\\AppConfig.cs",
               "ToolTip": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\AppConfig.cs",
               "RelativeToolTip": "SocialMediaPlatform.Reddit.Core\\AppConfig.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T23:21:23.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminUser.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\Domain\\User\\AdminUser.cs",
-              "RelativeDocumentMoniker": "SocialMediaPlatform.Reddit.Core\\Domain\\User\\AdminUser.cs",
-              "ToolTip": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Reddit.Core\\Domain\\User\\AdminUser.cs",
-              "RelativeToolTip": "SocialMediaPlatform.Reddit.Core\\Domain\\User\\AdminUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T23:21:21.771Z",
+              "WhenOpened": "2026-03-08T23:23:19.082Z",
               "EditorCaption": ""
             }
           ]

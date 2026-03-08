@@ -9,10 +9,12 @@ namespace SocialMediaPlatform.Core.Domain.DTO
     /// <param name="Username">Хэрэглэгчийн нэр</param>
     /// <param name="Email">Хэрэглэгчийн цахим шуудан хаяг</param>
     /// <param name="Type">Хэрэглэгчийн төрөл</param>
+    /// <param name="CreatedAt">Хэрэглэгч үүссэн огноо</param>
     public record UserDTO(
         UserId Id,
         string Username,
         string Email,
-        string Type
+        string Type,
+        DateTime CreatedAt
     );
 }

@@ -4,23 +4,10 @@ using SocialMediaPlatform.Core.Domain.ID;
 namespace SocialMediaPlatform.Core.Domain.Post
 {
     /// <summary>
-    /// Post-ийн үндсэн абстракт класс
+    /// Post-ийн үндсэн абстракт ерөнхий төрлийн класс
     /// </summary>
-    public abstract class Post<TPostType>
+    public abstract class Post<TPostType> : PostBase
     {
-        /// <summary>ID дугаар</summary>
-        public required PostId Id { get; init; }
-
-        /// <summary>Post үүсгэсэн огноо</summary>
-        public DateTime CreatedAt { get; init; } = DateTime.Now;
-
-        /// <summary>Бичсэн хэрэглэгчийн ID дугаар</summary>
-        public required UserId AuthorId { get; init; }
-
-        /// <summary>Харагдацын төрөл</summary>
-        public required VisibilityType Visibility { get; set; }
-
-        /// <summary>Post-ийн төрөл</summary>
         public required TPostType Type { get; init; }
     }
 }

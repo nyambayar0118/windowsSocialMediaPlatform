@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMediaPlatform.Reddit.Core.Enum
+﻿namespace SocialMediaPlatform.Reddit.Core.Enum
 {
-    public class UserType
+    /// <summary>
+    /// Хэрэглэгчийн төрөл
+    /// </summary>
+    public enum UserType
     {
+        Normal,
+        Admin
     }
 }

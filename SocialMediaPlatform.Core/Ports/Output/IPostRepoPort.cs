@@ -10,21 +10,21 @@ namespace SocialMediaPlatform.Core.Ports.Output
     {
         /// <summary>Post хадгалах</summary>
         /// <param name="post">Хадгалах Post-ийн объект</param>
-        public void Save(Post<object> post);
+        public void Save(PostBase post);
 
         /// <summary>ID-аар Post хайх</summary>
         /// <param name="postId">Post-ийн ID дугаар</param>
         /// <returns>Олдсон Post-ийн объект</returns>
-        public Post<object> FindById(PostId postId);
+        public PostBase FindById(PostId postId);
 
         /// <summary>Хэрэглэгчийн Post-уудыг хайх</summary>
         /// <param name="userId">Хэрэглэгчийн ID дугаар</param>
         /// <returns>Post-ийн объектын жагсаалт</returns>
-        public List<Post<object>> FindByAuthor(UserId userId);
+        public List<PostBase> FindByAuthor(UserId userId);
 
         /// <summary>Post шинэчлэх</summary>
         /// <param name="post">Шинэчлэх Post-ийн объект</param>
-        public void Update(Post<object> post);
+        public void Update(PostBase post);
 
         /// <summary>Post устгах</summary>
         /// <param name="postId">Post-ийн ID дугаар</param>

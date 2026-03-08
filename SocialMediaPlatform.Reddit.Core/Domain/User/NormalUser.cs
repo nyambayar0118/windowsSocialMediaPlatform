@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SocialMediaPlatform.Core.Domain.User;
+using SocialMediaPlatform.Reddit.Core.Enum;
 
 namespace SocialMediaPlatform.Reddit.Core.Domain.User
 {
-    public class NormalUser
+    /// <summary>
+    /// Энгийн хэрэглэгчийн класс
+    /// </summary>
+    public class NormalUser : User<UserType>
     {
     }
 }

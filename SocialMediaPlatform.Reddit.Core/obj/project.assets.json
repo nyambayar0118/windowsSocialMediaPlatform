@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "SocialMediaPlatform.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/SocialMediaPlatform.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialMediaPlatform.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SocialMediaPlatform.Core/1.0.0": {
+      "type": "project",
+      "path": "../SocialMediaPlatform.Core/SocialMediaPlatform.Core.csproj",
+      "msbuildProject": "../SocialMediaPlatform.Core/SocialMediaPlatform.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "SocialMediaPlatform.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Acer\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Core\\SocialMediaPlatform.Core.csproj": {
+              "projectPath": "C:\\Users\\Acer\\source\\repos\\SocialMediaPlatform\\SocialMediaPlatform.Core\\SocialMediaPlatform.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

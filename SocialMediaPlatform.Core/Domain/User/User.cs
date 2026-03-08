@@ -3,26 +3,10 @@
 namespace SocialMediaPlatform.Core.Domain.User
 {
     /// <summary>
-    /// User-ийн үндсэн абстракт класс
+    /// Post-ийн үндсэн абстракт ерөнхий төрлийн класс
     /// </summary>
-    public abstract class User<TUserType>
+    public abstract class User<TUserType> : UserBase
     {
-        /// <summary>ID дугаар</summary>
-        public required UserId Id { get; init; }
-
-        /// <summary>Хэрэглэгчийн нэр</summary>
-        public required string Username { get; set; }
-
-        /// <summary>Цахим шуудан хаяг</summary>
-        public required string Email { get; set; }
-
-        /// <summary>Нууц үг</summary>
-        public required string Password { get; set; }
-
-        /// <summary>Хэрэглэгч үүсгэсэн огноо</summary>
-        public DateTime CreatedAt { get; init; } = DateTime.Now;
-
-        /// <summary>Хэрэглэгчийн төрөл</summary>
         public required TUserType Type { get; init; }
     }
 }

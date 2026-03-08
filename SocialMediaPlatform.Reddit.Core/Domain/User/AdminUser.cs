@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SocialMediaPlatform.Core.Domain.User;
+using SocialMediaPlatform.Reddit.Core.Enum;
 
 namespace SocialMediaPlatform.Reddit.Core.Domain.User
 {
-    public class AdminUser
+    /// <summary>
+    /// Админ хэрэглэгчийн класс
+    /// </summary>
+    public class AdminUser : User<UserType>
     {
+        /// <summary>Админы эрхүүд</summary>
+        public List<Privilege> Privileges { get; set; } = new List<Privilege>();
     }
 }

@@ -10,21 +10,21 @@ namespace SocialMediaPlatform.Core.Ports.Output
     {
         /// <summary>Хэрэглэгч хадгалах</summary>
         /// <param name="user">Хадгалах хэрэглэгчийн объект</param>
-        public void Save(User<object> user);
+        public void Save(UserBase user);
 
         /// <summary>ID-аар хэрэглэгч хайх</summary>
         /// <param name="userId">Хэрэглэгчийн ID дугаар</param>
         /// <returns>Олдсон хэрэглэгчийн объект</returns>
-        public User<object> FindById(UserId userId);
+        public UserBase FindById(UserId userId);
 
         /// <summary>Хэрэглэгчийн нэрээр хэрэглэгч хайх</summary>
         /// <param name="username">Хэрэглэгчийн нэр</param>
         /// <returns>Олдсон хэрэглэгчийн объект</returns>
-        public User<object> FindByUsername(string username);
+        public UserBase FindByUsername(string username);
 
         /// <summary>Хэрэглэгчийн мэдээлэл шинэчлэх</summary>
         /// <param name="user">Шинэчлэх хэрэглэгчийн объект</param>
-        public void Update(User<object> user);
+        public void Update(UserBase user);
 
         /// <summary>Хэрэглэгч устгах</summary>
         /// <param name="userId">Хэрэглэгчийн ID дугаар</param>

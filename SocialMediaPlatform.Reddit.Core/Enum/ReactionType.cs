@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMediaPlatform.Reddit.Core.Enum
+﻿namespace SocialMediaPlatform.Reddit.Core.Enum
 {
-    public class ReactionType
+    /// <summary>
+    /// Reaction-ий төрөл
+    /// </summary>
+    public enum ReactionType
     {
+        Upvote,
+        Downvote
     }
 }

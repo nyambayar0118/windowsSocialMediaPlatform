@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SocialMediaPlatform.Core.Domain.Reaction;
+using SocialMediaPlatform.Reddit.Core.Enum;
 
 namespace SocialMediaPlatform.Reddit.Core.Domain.Reaction
 {
-    public class Upvote
+    /// <summary>
+    /// Reddit платформын эерэг үнэлгээ - Upvote класс
+    /// </summary>
+    public class Upvote : Reaction<ReactionType>
     {
     }
 }

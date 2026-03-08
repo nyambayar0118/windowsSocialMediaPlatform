@@ -7,15 +7,17 @@ namespace SocialMediaPlatform.Core.Domain.DTO
     /// Post классын объектын Data Transfer Object
     /// </summary>
     /// <param name="Id">ID дугаар</param>
-    /// <param name="AuthorId">Post-ийг үүсгэсэн хэрэглэгчийн ID дугаар</param>
-    /// <param name="Type">Post-ийн төрөл</param>
+    /// <param name="AuthorId">Post-ийг үүсгэсэн хэрэглэгчийн ID дугаар</param>  
     /// <param name="Visibility">Post-ийн харагдацын түвшин</param>
     /// <param name="CreatedAt">Үүсгэсэн огноо</param>
+    /// <param name="Title">Post-ийн гарчиг</param>
+    /// <param name="GroupId">Post-ийг оруулсан группын ID дугаар</param>
     public record PostDTO(
         PostId Id,
         UserId AuthorId,
-        string Type,
         VisibilityType Visibility,
-        DateTime CreatedAt
+        DateTime CreatedAt,
+        string? Title = null,
+        GroupId? GroupId = null
     );
 }
