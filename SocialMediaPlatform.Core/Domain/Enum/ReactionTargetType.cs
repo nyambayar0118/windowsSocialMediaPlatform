@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMediaPlatform.Core.Domain.Enum
+﻿namespace SocialMediaPlatform.Core.Domain.Enum
 {
-    public class ReactionTargetType
+    /// <summary>
+    /// Reaction дарж болох entity-ийн төрөл
+    /// </summary>
+    public enum ReactionTargetType
     {
+        Comment,
+        Post
     }
 }

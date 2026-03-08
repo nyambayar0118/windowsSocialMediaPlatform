@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMediaPlatform.Core.Domain.Enum
+﻿namespace SocialMediaPlatform.Core.Domain.Enum
 {
-    public class VisibilityType
+    /// <summary>
+    /// Post-ийн харагдацын төрөл
+    /// </summary>
+    public enum VisibilityType
     {
+        Private,
+        Default
     }
 }

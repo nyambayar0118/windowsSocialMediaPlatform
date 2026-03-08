@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMediaPlatform.Core.Domain.Enum
+﻿namespace SocialMediaPlatform.Core.Domain.Enum
 {
-    public class IdEntityType
+    /// <summary>
+    /// ID дугаартай entity-үүд
+    /// </summary>
+    public enum IdEntityType
     {
+        Comment,
+        Group,
+        Post,
+        User
     }
 }
