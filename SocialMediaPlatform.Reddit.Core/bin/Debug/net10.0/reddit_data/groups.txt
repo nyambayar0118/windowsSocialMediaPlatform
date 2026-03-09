@@ -1,5 +1,0 @@
-1|Mongolia|A Subreddit for all Mongolian things|2026-03-09T06:59:31.4675022+08:00|1||False|0
-2|Minecraft|All things related to Minecraft the game|2026-03-09T07:37:42.5680836+08:00|2||False|0
-3|MinecraftRealms|All things related to minecraft realms|2026-03-09T07:38:19.6325386+08:00|2||False|0
-4|GravityFalls|All things related to Gravity falls the cartoon|2026-03-09T07:40:27.6313312+08:00|3||False|0
-5|Cinema|Everything related to Cinema and Movies|2026-03-09T09:51:06.1499636+08:00|5||False|0

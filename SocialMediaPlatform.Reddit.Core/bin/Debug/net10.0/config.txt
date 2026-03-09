@@ -1,7 +1,0 @@
-users=reddit_data/users.txt
-posts=reddit_data/posts.txt
-groups=reddit_data/groups.txt
-group_members=reddit_data/group_members.txt
-comments=reddit_data/comments.txt
-reactions=reddit_data/reactions.txt
-ids=reddit_data/ids.txt
