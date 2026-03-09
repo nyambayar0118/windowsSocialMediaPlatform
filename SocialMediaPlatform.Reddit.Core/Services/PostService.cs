@@ -87,10 +87,11 @@ namespace SocialMediaPlatform.Reddit.Core.Services
         /// </summary>
         /// <param name="userId">Хэрэглэгчийн ID дугаар</param>
         /// <returns>Post-ийн DTO жагсаалт</returns>
-        public List<PostDTO> GetTimeline(UserId userId)
+        public List<PostDTO> GetTimeline()
         {
-            return _repo.FindByAuthor(userId)
+            return _repo.GetAll()
                 .Select(ToDTO)
+                .OrderByDescending(p => p.CreatedAt)
                 .ToList();
         }
 

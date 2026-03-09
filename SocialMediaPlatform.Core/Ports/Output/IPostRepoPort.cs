@@ -17,6 +17,12 @@ namespace SocialMediaPlatform.Core.Ports.Output
         /// <returns>Олдсон Post-ийн объект</returns>
         public PostBase FindById(PostId postId);
 
+        /// <summary>
+        /// Платформ дээрх бүх Post-уудыг авах
+        /// </summary>
+        /// <returns>Post-ийн объектын жагсаалт</returns>
+        public List<PostBase> GetAll();
+
         /// <summary>Хэрэглэгчийн Post-уудыг хайх</summary>
         /// <param name="userId">Хэрэглэгчийн ID дугаар</param>
         /// <returns>Post-ийн объектын жагсаалт</returns>

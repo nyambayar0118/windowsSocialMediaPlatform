@@ -36,8 +36,21 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
                 if (post.Id.Value == postId.Value)
                     return post;
             }
-            throw new KeyNotFoundException($"Post ID {postId.Value} олдсонгүй");
+            throw new KeyNotFoundException($"Post ID {postId.Value} not found");
         }
+
+        public List<PostBase> GetAll()
+        {
+            var results = new List<PostBase>();
+            foreach (var line in System.IO.File.ReadAllLines(_filePath))
+            {
+                if (string.IsNullOrWhiteSpace(line)) continue;
+                var post = Deserialize(line);
+                results.Add(post);
+            }
+            return results;
+        }
+        
 
         /// <summary>Хэрэглэгчийн Post-уудыг авах</summary>
         public List<PostBase> FindByAuthor(UserId userId)
@@ -92,7 +105,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
             if (post is SubredditPost sp)
                 return $"{sp.Id.Value}|{sp.AuthorId.Value}|{sp.Visibility}|{sp.CreatedAt:O}|Subreddit|{sp.Title}|{sp.Content}|{sp.SubredditId.Value}";
 
-            throw new ArgumentException($"Тодорхойгүй Post төрөл: {post.GetType().Name}");
+            throw new ArgumentException($"Undefined Post type: {post.GetType().Name}");
         }
 
         /// <summary>Мөрийг Post объект болгох</summary>
@@ -132,7 +145,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
                     SubredditId = new GroupId { Value = uint.Parse(parts[7]) }
                 };
 
-            throw new ArgumentException($"Тодорхойгүй Post төрөл: {type}");
+            throw new ArgumentException($"Undefined Post type: {type}");
         }
     }
 }

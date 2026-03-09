@@ -30,6 +30,12 @@ namespace SocialMediaPlatform.Core.Ports.Input
         /// <param name="postId">Post-ийн ID дугаар</param>
         /// <returns>Comment-ийн DTO жагсаалт</returns>
         public List<CommentDTO> GetComments(PostId postId);
+        /// <summary>
+        /// ID дугаараар Comment-ийг авах
+        /// </summary>
+        /// <param name="commentId"></param>
+        /// <returns>Comment DTO</returns>
+        public CommentDTO GetComment(CommentId commentId);
 
         /// <summary>Comment-ийн хариунуудыг авах</summary>
         /// <param name="commentId">Comment-ийн ID дугаар</param>

@@ -35,7 +35,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
                 if (comment.Id.Value == commentId.Value)
                     return comment;
             }
-            throw new KeyNotFoundException($"Comment ID {commentId.Value} олдсонгүй");
+            throw new KeyNotFoundException($"Comment ID {commentId.Value} not found");
         }
 
         /// <summary>Post-ийн үндсэн Comment-уудыг авах</summary>
@@ -89,7 +89,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
             if (comment is ReplyComment rc)
                 return $"{rc.Id.Value}|{rc.AuthorId.Value}|{rc.Content}|{rc.CreatedAt:O}|Reply||{rc.ParentCommentId.Value}";
 
-            throw new ArgumentException($"Тодорхойгүй Comment төрөл: {comment.GetType().Name}");
+            throw new ArgumentException($"Undefined Comment type: {comment.GetType().Name}");
         }
 
         /// <summary>Мөрийг Comment объект болгох</summary>
@@ -124,7 +124,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
                     ParentCommentId = new CommentId { Value = uint.Parse(parts[6]) }
                 };
 
-            throw new ArgumentException($"Тодорхойгүй Comment төрөл: {type}");
+            throw new ArgumentException($"Undefined Comment type: {type}");
         }
     }
 }

@@ -67,7 +67,7 @@ namespace SocialMediaPlatform.Reddit.Core
         public PostDTO CreatePost(PostType type, string content)
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
+                ?? throw new InvalidOperationException("Session expired");
             return _postService.CreatePost(type.ToString(), currentUser.Id, content);
         }
 
@@ -83,8 +83,8 @@ namespace SocialMediaPlatform.Reddit.Core
         public List<PostDTO> GetTimeline()
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
-            return _postService.GetTimeline(currentUser.Id);
+                ?? throw new InvalidOperationException("Session expired");
+            return _postService.GetTimeline();
         }
 
         // ─── GROUP ───────────────────────────────────────────────
@@ -93,8 +93,10 @@ namespace SocialMediaPlatform.Reddit.Core
         public GroupDTO CreateGroup(string name, string description)
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
-            return _groupService.CreateGroup(name, description, currentUser.Id);
+                ?? throw new InvalidOperationException("Session expired");
+            var result = _groupService.CreateGroup(name, description, currentUser.Id);
+            JoinGroup(result.Id); // Групп үүсгэсний дараа өөрөө нэгдэнэ   
+            return result;
         }
 
         /// <summary>Групп устгах</summary>
@@ -105,7 +107,7 @@ namespace SocialMediaPlatform.Reddit.Core
         public GroupDTO EditGroup(GroupId groupId, string name, string description) =>
             _groupService.EditGroup(groupId, name, description);
 
-        /// <summary>Групп авах</summary>
+        /// <summary>Группийг ID дугаараар хайх</summary>
         public GroupDTO GetGroup(GroupId groupId) =>
             _groupService.GetGroup(groupId);
 
@@ -113,7 +115,8 @@ namespace SocialMediaPlatform.Reddit.Core
         public void JoinGroup(GroupId groupId)
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
+                ?? throw new InvalidOperationException("Session expired");
+            _groupService.GetGroup(groupId); // Групп байгаа эсэхийг шалгах
             _groupMemberService.Join(groupId, currentUser.Id);
         }
 
@@ -121,7 +124,8 @@ namespace SocialMediaPlatform.Reddit.Core
         public void LeaveGroup(GroupId groupId)
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
+                ?? throw new InvalidOperationException("Session expired");
+            _groupService.GetGroup(groupId);
             _groupMemberService.Leave(groupId, currentUser.Id);
         }
 
@@ -131,7 +135,8 @@ namespace SocialMediaPlatform.Reddit.Core
         public CommentDTO AddComment(PostId postId, string content)
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
+                ?? throw new InvalidOperationException("Session expired");
+            _postService.GetPost(postId); // Post байгаа эсэхийг шалгах
             return _commentService.AddComment(postId, currentUser.Id, content);
         }
 
@@ -139,7 +144,8 @@ namespace SocialMediaPlatform.Reddit.Core
         public CommentDTO ReplyToComment(CommentId commentId, string content)
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
+                ?? throw new InvalidOperationException("Session expired");
+            _commentService.GetComment(commentId); // Comment байгаа эсэхийг шалгах
             return _commentService.ReplyToComment(commentId, currentUser.Id, content);
         }
 
@@ -161,7 +167,7 @@ namespace SocialMediaPlatform.Reddit.Core
         public void ReactPost(PostId postId, ReactionType type)
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
+                ?? throw new InvalidOperationException("Session expired");
             _reactionService.React(postId.Value, ReactionTargetType.Post, currentUser.Id, type.ToString());
         }
 
@@ -169,7 +175,7 @@ namespace SocialMediaPlatform.Reddit.Core
         public void ReactComment(CommentId commentId, ReactionType type)
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
+                ?? throw new InvalidOperationException("Session expired");
             _reactionService.React(commentId.Value, ReactionTargetType.Comment, currentUser.Id, type.ToString());
         }
 
@@ -177,7 +183,7 @@ namespace SocialMediaPlatform.Reddit.Core
         public void Unreact(uint targetId, ReactionTargetType targetType)
         {
             var currentUser = _session.GetCurrentUser()
-                ?? throw new InvalidOperationException("Нэвтрээгүй байна");
+                ?? throw new InvalidOperationException("Session expired");
             _reactionService.Unreact(targetId, targetType, currentUser.Id);
         }
     }

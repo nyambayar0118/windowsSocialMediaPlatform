@@ -33,6 +33,6 @@ namespace SocialMediaPlatform.Core.Ports.Input
         /// <summary>Хэрэглэгчийн timeline авах</summary>
         /// <param name="userId">Хэрэглэгчийн ID дугаар</param>
         /// <returns>Post-ийн DTO жагсаалт</returns>
-        public List<PostDTO> GetTimeline(UserId userId);
+        public List<PostDTO> GetTimeline();
     }
 }

@@ -73,7 +73,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
             if (member is GroupMember<Privilege> gm)
                 return $"{gm.GroupId.Value}|{gm.UserId.Value}|{gm.JoinedAt:O}|{gm.Role}";
 
-            throw new ArgumentException($"Тодорхойгүй GroupMember төрөл: {member.GetType().Name}");
+            throw new ArgumentException($"Undefined GroupMember type: {member.GetType().Name}");
         }
 
         /// <summary>Мөрийг GroupMember объект болгох</summary>

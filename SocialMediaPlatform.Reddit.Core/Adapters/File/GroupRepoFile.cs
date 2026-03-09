@@ -34,7 +34,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
                 if (group.Id.Value == groupId.Value)
                     return group;
             }
-            throw new KeyNotFoundException($"Group ID {groupId.Value} олдсонгүй");
+            throw new KeyNotFoundException($"Group ID {groupId.Value} not found");
         }
 
         /// <summary>Группын мэдээлэл шинэчлэх</summary>

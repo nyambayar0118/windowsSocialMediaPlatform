@@ -35,7 +35,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
                 if (user.Id.Value == userId.Value)
                     return user;
             }
-            throw new KeyNotFoundException($"User ID {userId.Value} олдсонгүй");
+            throw new KeyNotFoundException($"User ID {userId.Value} not found");
         }
 
         /// <summary>Хэрэглэгчийн нэрээр хэрэглэгч хайх</summary>
@@ -48,7 +48,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
                 if (user.Username == username)
                     return user;
             }
-            throw new KeyNotFoundException($"Username '{username}' олдсонгүй");
+            throw new KeyNotFoundException($"Username '{username}' not found");
         }
 
         /// <summary>Хэрэглэгчийн мэдээлэл шинэчлэх</summary>
@@ -93,7 +93,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
             if (user is NormalUser normal)
                 return $"{normal.Id.Value}|{normal.Username}|{normal.Email}|{normal.Password}|{normal.CreatedAt:O}|Normal|";
 
-            throw new ArgumentException($"Тодорхойгүй User төрөл: {user.GetType().Name}");
+            throw new ArgumentException($"Undefined User type: {user.GetType().Name}");
         }
 
         /// <summary>Мөрийг User объект болгох</summary>
@@ -138,7 +138,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
                 };
             }
 
-            throw new ArgumentException($"Тодорхойгүй User төрөл: {type}");
+            throw new ArgumentException($"Undfined User type: {type}");
         }
     }
 }

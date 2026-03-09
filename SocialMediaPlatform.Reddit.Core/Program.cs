@@ -73,7 +73,8 @@ static void MainMenu(Controller controller)
         Console.WriteLine("3. Create a Subreddit");
         Console.WriteLine("4. Join a Subreddit");
         Console.WriteLine("5. Write a Comment");
-        Console.WriteLine("6. Exit");
+        Console.WriteLine("6. Write a Reply");
+        Console.WriteLine("0. Logout");
         Console.Write("Choice: ");
 
         var choice = Console.ReadLine();
@@ -83,7 +84,8 @@ static void MainMenu(Controller controller)
         else if (choice == "3") CreateSubreddit(controller);
         else if (choice == "4") JoinSubreddit(controller);
         else if (choice == "5") AddComment(controller);
-        else if (choice == "6") { controller.Logout(); break; }
+        else if (choice == "6") AddReply(controller);
+        else if (choice == "0") { controller.Logout(); break; }
         else Console.WriteLine("Invalid choice.");
     }
 }
@@ -188,6 +190,24 @@ static void AddComment(Controller controller)
         var postId = new SocialMediaPlatform.Core.Domain.ID.PostId { Value = uint.Parse(input) };
         var comment = controller.AddComment(postId, content);
         Console.WriteLine($"Comment created succesfully. ID: {comment.Id.Value}");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error: {ex.Message}");
+    }
+}
+
+static void AddReply(Controller controller)
+{
+    Console.Write("Comment ID: ");
+    var input = Console.ReadLine()!;
+    Console.Write("Content: ");
+    var content = Console.ReadLine()!;
+    try
+    {
+        var commentId = new SocialMediaPlatform.Core.Domain.ID.CommentId { Value = uint.Parse(input) };
+        var comment = controller.ReplyToComment(commentId, content);
+        Console.WriteLine($"Reply created succesfully. ID: {comment.Id.Value}");
     }
     catch (Exception ex)
     {

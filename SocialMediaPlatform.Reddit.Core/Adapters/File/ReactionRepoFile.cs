@@ -85,7 +85,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
             if (reaction is Downvote down)
                 return $"{down.TargetId}|{down.TargetType}|{down.AuthorId.Value}|{down.CreatedAt:O}|Downvote";
 
-            throw new ArgumentException($"Тодорхойгүй Reaction төрөл: {reaction.GetType().Name}");
+            throw new ArgumentException($"Undefined Reaction type: {reaction.GetType().Name}");
         }
 
         /// <summary>Мөрийг Reaction объект болгох</summary>
@@ -118,7 +118,7 @@ namespace SocialMediaPlatform.Reddit.Core.Adapters.File
                     Type = ReactionType.Downvote
                 };
 
-            throw new ArgumentException($"Тодорхойгүй Reaction төрөл: {reactionType}");
+            throw new ArgumentException($"Undefined Reaction type: {reactionType}");
         }
     }
 }

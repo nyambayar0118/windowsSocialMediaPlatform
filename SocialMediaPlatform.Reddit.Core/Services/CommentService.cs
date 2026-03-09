@@ -91,6 +91,11 @@ namespace SocialMediaPlatform.Reddit.Core.Services
                 .Select(ToDTO)
                 .ToList();
         }
+        public CommentDTO GetComment(CommentId commentId)
+        {
+            var post = _repo.FindById(commentId);
+            return ToDTO(post);
+        }
 
         /// <summary>
         /// Comment-ийн хариунуудыг авах
